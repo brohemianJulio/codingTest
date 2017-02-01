@@ -6,7 +6,7 @@
 * Verify by running the commands node -v and npm -v in a terminal/console window.
 
 ## Build Instructions
-* clone this repository and navigate to it locally
+* git clone https://github.com/brohemianJulio/codingTest
 * npm install
 * npm start
 * A browser should pop-up otherwise browse to: http://localhost:3000/
