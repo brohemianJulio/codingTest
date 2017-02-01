@@ -137,6 +137,12 @@ export class AppComponent implements OnInit {
 
     for (var key in appendData) {
       var appendValue = appendData[key];
+      //append if not exist
+      if (!this.crystalSorted[key]) {
+        this.crystalSorted[key] = {};
+        this.crystalSorted[key].income = 0;
+        this.crystalSorted[key].spent = 0;
+      }
       var sortedValue = this.crystalSorted[key];
 
       let combinedSpent = Math.abs(appendValue.spent) + Math.abs(sortedValue.spent);
